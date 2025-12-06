@@ -1,0 +1,13 @@
+[package]
+name = "tests-integration"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+solidus-geom.workspace = true
+casteljau-font = { path = "../casteljau-font" }
+nurbie-font = { path = "../nurbie-font" }
+serde_json.workspace = true
+tempfile = "3.13"

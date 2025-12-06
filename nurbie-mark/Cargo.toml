@@ -1,0 +1,12 @@
+[package]
+name = "nurbie-mark"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+solidus-geom.workspace = true
+nurbie-font = { path = "../nurbie-font" }
+serde_json.workspace = true
+clap = { version = "4.5", features = ["derive"] }

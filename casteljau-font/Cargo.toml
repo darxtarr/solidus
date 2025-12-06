@@ -1,0 +1,21 @@
+[package]
+name = "casteljau-font"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+solidus-geom.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+ttf-parser = "0.24"
+clap = { version = "4.5", features = ["derive"] }
+
+[lib]
+name = "casteljau_font"
+path = "src/lib.rs"
+
+[[bin]]
+name = "casteljau-font"
+path = "src/main.rs"

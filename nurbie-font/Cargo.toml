@@ -1,0 +1,21 @@
+[package]
+name = "nurbie-font"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+solidus-geom.workspace = true
+casteljau-font = { path = "../casteljau-font" }
+serde.workspace = true
+serde_json.workspace = true
+clap = { version = "4.5", features = ["derive"] }
+
+[lib]
+name = "nurbie_font"
+path = "src/lib.rs"
+
+[[bin]]
+name = "nurbie-font"
+path = "src/main.rs"

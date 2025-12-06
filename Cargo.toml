@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "solidus-geom",
+    "casteljau-font",
+    "nurbie-font", "tests-integration", "nurbie-mark",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Ulli <darxtarr@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+solidus-geom = { path = "solidus-geom" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
